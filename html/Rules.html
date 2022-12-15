@@ -1,0 +1,186 @@
+<!-- By Rob-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Rules.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Règles de Jeux</title>
+</head>
+
+<header>
+    <nav>
+        <img src="../img/vectoriel-removebg-preview.png" alt="hihih" id="imgAli">
+        <div id="TitleNav">p<span class="bromure">R</span>ob<span class="bromure">A</span class="bromure">bi<span
+                class="bromure">L</span>it<span>Y</span class="bromure"><span>G</span class="bromure">am<span
+                class="bromure">E</span>s</div>
+        <div id="navBis">
+            <ul id="ulT">
+                <li id="jk"><a href="Accueil.html">Accueil</a></li>
+                <li><a href="#">Jeux</a>
+                    <!--ici en dessous menu deroulant test-->
+                    <ul class="deroulant">
+                        <li><a href="jeux.html">La roulette française</a></li>
+                        <li><a href=""><em>Le poker (in progress)</em></a></li>
+                        <li><a href="#"><em>Le 21 (dés) (in progress)</em></a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacts.html">Contacts</a></li>
+                <li id="nb"> <span id="pmlo"> <a href="#">Règles de jeux</a> </span>
+                    <ul class="deroulantRules">
+                        <li><a href="Rules.html">La roulette française</a></li>
+                        <li><a href="#"><em>Le poker (in progress)</em></a></li>
+                        <li><a href="#"><em>Le 21 (dés) (in progress)</em></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div>
+        <p>La routelette est un jeu de hasard qui fait son apparition en Italie au début du 17e siècle sous le nom de
+            <em>biribi</em>. Le mot français quant à lui apparait pour la prmière fois en 1716.
+            C'est un jeu traditionnel des casinos aujourdh'dui, bien connu du grand public, où il s'agit simplement de
+            parier sur l'endroit où la bille va tomber.
+        </p>
+    </div>
+    <div>
+        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+        Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+    </div>
+    <div id="conteneur">
+        <div id="divLetters">
+            <span id="locationA" class="locationLetters">A</span>
+            <span id="locationB" class="locationLetters">B</span>
+            <span id="locationC" class="locationLetters">C</span>
+            <span id="locationD" class="locationLetters">D</span>
+            <span id="locationE" class="locationLetters">E</span>
+            <span id="locationF" class="locationLetters">F</span>
+            <span id="locationG" class="locationLetters">G</span>
+            <span id="locationH" class="locationLetters">H</span>
+            <span id="locationI" class="locationLetters">I</span>
+            <span id="locationJ" class="locationLetters">J</span>
+            <span id="locationK" class="locationLetters">K</span>
+        </div>
+        <div>
+            <table>
+                <caption>Les mises et les gains possibles</caption>
+                <thead>
+                    <tr>
+                        <th>Mise(s) sur<br>Numéros</th>
+                        <th>Repères</th>
+                        <th class="borderCel">Gains</th>
+                        <th class="blocCell">Mise(s) sur<br>Blocs</th>
+                        <th>Repères</th>
+                        <th>Gains</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1 (en plein)</td>
+                        <td>
+                            <div id="letter_A_Js"> <span class="letter" id="spanA">A</span></div>
+                        </td>
+                        <td class="borderCel">35 fois la mise</td>
+                        <td class="blocCell">une douzaine</td>
+                        <td><span class="letter" id="spanF">F</span></td>
+                        <td>2 fois la mise</td>
+                    </tr>
+                    <tr>
+                        <td class="borderUnified">2 (à cheval)</td>
+                        <td><span class="letter" id="spanB">B</span></td>
+                        <td class="borderCel">17 fois la mise</td>
+                        <td class="blocCell">2 douzaines</td>
+                        <td><span class="letter" id="spanG">G</span></td>
+                        <td>1/2 fois la mise</td>
+                    </tr>
+                    <tr>
+                        <td>3 (transversale)</td>
+                        <td><span class="letter" id="spanC">C</span></td>
+                        <td class="borderCel">11 fois la mise</td>
+                        <td>une colonne</td>
+                        <td><span class="letter" id="spanH">H</span></td>
+                        <td>2 fois la mise</td>
+                    </tr>
+                    <tr>
+                        <td>4 (un carré)</td>
+                        <td><span class="letter" id="spanD">D</span></td>
+                        <td class="borderCel">8 fois la mise</td>
+                        <td>2 colonnes</td>
+                        <td><span class="letter" id="spanI">I</span></td>
+                        <td>1/2 fois la mise</td>
+                    </tr>
+                    <tr>
+                        <td>6 (un sixain)</td>
+                        <td><span class="letter" id="spanE">E</span></td>
+                        <td class="borderCel">5 fois la mise</td>
+                        <td>une couleur</td>
+                        <td><span class="letter" id="spanJ">J</span></td>
+                        <td>2 fois la mise</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="borderCel">Le zéro (<span id="zero">0</span>) vaut également 35 fois la
+                            mise
+                        </td>
+                        <td>pair/impair</td>
+                        <td><span class="letter" id="spanK">K</span></td>
+                        <td>2 fois la mise</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="img">
+            <img src="../img/modified.png" alt="gfgdfgd">
+        </div>
+        <div id="rulesExplained">
+            -Pour le cas des numéros plein, comme le numéro <span class="letter">A</span>, il suffit de miser sur une
+            seule case.
+            <br><br>
+            -Une mise à cheval signifique que l'on mise sur deux numéro comme ici le <span class="letter">B</span>, la
+            mise est placée sur les numéros 4 et 5.
+            <br><br>
+            -La transeversale, avec le <span class="letter">C</span>, prend en compte 3 nuémros, ici le 22, 23 et 24.
+            <br><br>
+            -Le <span class="letter">D</span> est ici placé sur 4 cases en mêm temps, 16, 17, 19 et 20, ce que l'on
+            appelle un carré.
+            <br><br>
+            -Enfin, le sixain correpond doit être placé comme une transeversale mais à cheval sur 2 numéros, ici le
+            <span class="letter">E</span> correpond donc aux 10, 11, 12, 13, 14 et 15.
+
+        </div>
+    </div>
+
+</body>
+
+<footer>
+    <div id="footer">
+        <div id="cFoot1" class="cFoot">
+            <p><a href="">Informations générales</a><br> <a href="">Réglement du site </a><br><a href="Contacts.html">Contact us</a></p>
+        </div>
+        <div class="cFoot">
+            <div>
+                <p>Suivez nous sur nos résseaux !</p>
+            </div>
+            <div>
+                <a href="http://facebook.com" target="_blank"> <img src="../img/fb.png" alt="Logo Facebook"> </a>
+                <a href="https://twitter.com" target="_blank"><img id="twitImg" src="../img/twitter.jpg" alt="Logo Twitter"> </a>
+            </div>
+        </div>
+        <div id="cFoot3" class="cFoot">
+            <p> N'hésitez pas à faire un don par le biais <br> des contacts si vous aimez le site ! <br> Nous vous en serions très reconnaissant :)</p>
+        </div>
+    </div>
+    <div id="CopyR">© 2022-2022, pRobAbiLitY GamEs, by Rob, <em>in progress</em></div>
+
+</footer>
+<script src="../script/Rules.js"></script>
+
+</html>

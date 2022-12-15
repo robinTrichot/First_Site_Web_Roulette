@@ -1,0 +1,291 @@
+/*   By Rob    */
+
+/* --- ALL ↓ ---*/
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-color: rgb(172, 220, 173);
+}
+
+/*--- HEADER ↓ ---*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+nav {
+    background-color: rgb(5, 27, 27);
+    width: 99.3%;
+    height: 100px;
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-around;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+nav img {
+    position: relative;
+    width: auto;
+    height: 100px;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#TitleNav {
+    position: relative;
+    width: auto;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: azure;
+    margin-left: 250px;
+}
+
+#TitleNav::before {
+    content: '\2660';
+    margin-right: 10px;
+    color: rgb(252, 252, 252);
+    font-size: 25px;
+}
+
+#TitleNav::after {
+    content: '\2663';
+    margin-left: 10px;
+    color: rgb(252, 252, 252);
+    font-size: 25px;
+}
+
+#TitleNav span {
+    color: rgb(52, 114, 114);
+    font-size: 1.2em;
+}
+
+#navBis {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#ulT {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(40, 57, 86);
+    margin-top: 45px;
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+
+a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: blueviolet;
+    font-size: 20px;
+}
+
+/*--- les menus déroulants ↓ ---*/
+
+ul .deroulant a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(241, 249, 22);
+}
+
+.deroulant {
+    display: none;
+    box-shadow: 0px 1px 2px rgb(1, 0, 0);
+    background-color: rgb(40, 57, 86);
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+}
+
+ul li:hover .deroulant {
+    display: block;
+    animation-name: shy;
+    animation-duration: 0.7s;
+    animation-delay: 0s;
+    border-radius: 30px;
+    list-style-type: none;
+}
+
+@keyframes shy {
+    0% {
+        top: 40px;
+        left: -1100px;
+    }
+
+    100% {
+        top: 40px;
+        left: 105px;
+    }
+}
+
+.deroulant li {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.deroulantRules {
+    display: none;
+    box-shadow: 0px 1px 2px rgb(1, 0, 0);
+    background-color: rgb(40, 57, 86);
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+}
+
+ul li:hover .deroulantRules {
+    display: block;
+    animation-name: shy2;
+    animation-duration: 0.7s;
+    animation-delay: 0s;
+    border-radius: 30px;
+    list-style-type: none;
+    right: 0px;
+}
+
+@keyframes shy2 {
+    0% {
+        top: 40px;
+        left: -1100px;
+    }
+
+    100% {
+        top: 40px;
+        left: 210px;
+    }
+}
+
+.deroulantRules li {
+    padding: 10px;
+    border-bottom: none;
+}
+
+ul .deroulantRules a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 8, 0);
+}
+
+/*--- les menus déroulants ↑ ---*/
+
+/*--- HEADER ↑ ---*/
+/*--- BODY ↓ ---*/
+
+#divTestBody {
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+}
+
+#sep {
+  
+    border: 1px solid black;
+}
+
+#Consignes {
+    margin: 50px;
+}
+
+#initSum {
+    margin: 50px;
+    margin-top: 10px;
+}
+#prog {
+    color: red;
+}
+#sommeI {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#divSom {
+    margin: 50px;
+}
+
+#divButtons {
+   
+}
+
+/*--- BODY ↑ ---*/
+/*--- FOOTER ↓ ---*/
+
+footer {
+
+    background-color: rgb(5, 27, 27);
+    width: 98%;
+    height: 200px;
+    text-align: center;
+    color: rgb(40, 142, 142);
+    font-weight: bold;
+    padding: 1%;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#cFoot1 {
+    line-height: 20px;
+}
+
+.cFoot {
+    background-color: rgb(40, 57, 86);
+    margin: 10px 50px;
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+footer em {
+    color: red;
+}
+
+.cFoot p {
+    padding: 10px;
+    margin-top: 5%;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cFoot1 p {
+    line-height: 30px;
+}
+
+footer a img {
+    width: 60px;
+    height: 50px;
+    transition: 0.4s;
+}
+
+footer a img:hover {
+    position: relative;
+    width: 70px;
+    height: 60px;
+}
+
+footer img:last-of-type {
+    border-radius: 100%;
+}
+
+/*--- FOOTER ↑ ---*/

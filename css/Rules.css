@@ -1,0 +1,471 @@
+/*   By Rob    */
+
+/* --- ALL ↓ ---*/
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(172, 220, 173);
+}
+
+/*--- HEADER ↓ ---*/
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    z-index: 6;
+}
+
+nav {
+    background-color: rgb(5, 27, 27);
+    width: 99.3%;
+    height: 100px;
+    display: flex;
+    margin-top: 0px;
+    justify-content: space-around;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+nav img {
+    position: relative;
+    width: auto;
+    height: 100px;
+    margin-left: 50px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#TitleNav {
+    position: relative;
+    width: auto;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: azure;
+    margin-left: 250px;
+}
+
+#TitleNav::before {
+    content: '\2660';
+    margin-right: 10px;
+    color: rgb(252, 252, 252);
+    font-size: 25px;
+}
+
+#TitleNav::after {
+    content: '\2663';
+    margin-left: 10px;
+    color: rgb(252, 252, 252);
+    font-size: 25px;
+}
+
+#TitleNav span {
+    color: rgb(52, 114, 114);
+    font-size: 1.2em;
+}
+
+#navBis {
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#ulT {
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(40, 57, 86);
+    margin-top: 45px;
+    padding: 15px 20px;
+    border-radius: 30px;
+}
+
+a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 15px;
+    transition: 0.5s;
+}
+
+a:hover {
+    color: blueviolet;
+    font-size: 20px;
+}
+
+
+/*--- les menus déroulants ↓ ---*/
+
+ul .deroulant a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(241, 249, 22);
+}
+
+.deroulant {
+    display: none;
+    box-shadow: 0px 1px 2px rgb(1, 0, 0);
+    background-color: rgb(40, 57, 86);
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+}
+
+ul li:hover .deroulant {
+    display: block;
+    animation-name: shy;
+    animation-duration: 0.7s;
+    animation-delay: 0s;
+    border-radius: 30px;
+    list-style-type: none;
+}
+
+@keyframes shy {
+    0% {
+        top: 40px;
+        left: -1100px;
+    }
+
+    100% {
+        top: 40px;
+        left: 105px;
+    }
+}
+
+.deroulant li {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.deroulantRules {
+    display: none;
+    box-shadow: 0px 1px 2px rgb(1, 0, 0);
+    background-color: rgb(40, 57, 86);
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+}
+
+ul li:hover .deroulantRules {
+    display: block;
+    animation-name: shy2;
+    animation-duration: 0.7s;
+    animation-delay: 0s;
+    border-radius: 30px;
+    list-style-type: none;
+    right: 0px;
+}
+
+@keyframes shy2 {
+    0% {
+        top: 40px;
+        left: -1100px;
+    }
+
+    100% {
+        top: 40px;
+        left: 210px;
+    }
+}
+
+.deroulantRules li {
+    padding: 10px;
+    border-bottom: none;
+}
+
+ul .deroulantRules a:hover {
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 8, 0);
+}
+
+/*--- les menus déroulants ↑ ---*/
+
+/*--- HEADER ↑ ---*/
+/*--- BODY ↓ ---*/
+
+#conteneur {
+    display: flex;
+    margin-top: 40px;
+}
+
+#section {
+    z-index: 2;
+    position: relative;
+}
+
+/* --- Array ↓ --- */
+
+caption {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: rgb(79, 139, 86);
+    border-radius: 30px;
+    padding: 5px;
+}
+
+table {
+    position: relative;
+    width: 400px;
+    border-collapse: collapse;
+    border: 3px solid black;
+    font-weight: bold;
+    left: 20px;
+}
+
+th {
+    border: 1px solid black;
+    width: 400px;
+    border-bottom: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(5, 27, 27);
+    color: white;
+
+}
+
+td {
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(79, 139, 86);
+    padding: 10px;
+
+}
+
+/* Les cases "Repères" ↓ */
+tbody td:nth-child(5) {
+    background-color:  rgb(90, 145, 89);
+}
+
+/* Les cases "mises sur numéros" ↓ */
+tbody td:nth-child(4) {
+    background-color: rgb(114, 149, 116);
+}
+
+/* Les cases "mises sur numéros" ↓ */
+tbody td:nth-child(1) {
+    background-color: rgb(114, 149, 116);
+}
+
+/* Les cases "Repères" ↓ */
+tbody td:nth-child(2) {
+    background-color: rgb(90, 145, 89);
+}
+
+tbody tr:last-of-type td:nth-child(2) {
+    background-color: rgb(79, 139, 86);
+}
+
+/* La case repère"K"" ↓ */
+tbody tr:last-of-type td:nth-child(3) {
+    background-color:  rgb(90, 145, 89);
+}
+
+/* La case pair/impair" ↓ */
+tbody tr:last-of-type td:nth-child(2) {
+    background-color: rgb(114, 149, 116);
+}
+
+/* La case "2 fois la mise" ↓ */
+tbody tr:last-of-type td:nth-child(4) {
+    background-color: rgb(79, 139, 86);
+}
+
+/* La case du Zéro ↓ */
+tbody tr:last-of-type td:first-of-type {
+    background-color: rgb(158, 200, 199);
+}
+
+.letter {
+    background-color: rgb(69, 201, 197);
+    padding: 5px;
+    border-radius: 30px;
+    color: rgb(57, 41, 178);
+}
+
+#zero {
+    color: green;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+.borderCel {
+    border-right: 4px solid black;
+    border-bottom: 0px dashed black;
+}
+
+.borderUnified {
+    border-top: 0px dashed black;
+}
+
+/* --- Array ^ --- */
+
+/* -------------------------- Suite page -------------- */
+
+#img {
+    position: relative;
+    left: 100px;
+}
+
+img {
+    width: 300px;
+}
+
+.letterBis {
+    background-color: rgb(69, 201, 197);
+    padding: 5px;
+    border-radius: 50%;
+    color: rgb(57, 41, 178);
+}
+
+#rulesExplained {
+    width: 300px;
+    height: 500px;
+    background-color: rgb(79, 139, 86);
+    margin-left: 200px;
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: 15px;
+}
+
+#divLetters {
+    position: absolute;
+}
+
+.locationLetters {
+    z-index: 5;
+    position: absolute;
+    font-weight: bold;
+    background-color: rgb(69, 201, 197);
+    padding: 5px;
+    border-radius: 50%;
+    color: rgb(57, 41, 178);
+}
+
+#locationA {
+    left: 900px;
+    top: 60px;
+}
+
+#locationB {
+    left: 818px;
+    top: 95px;
+}
+
+#locationC {
+    left: 952px;
+    top: 355px;
+}
+
+#locationD {
+    left: 818px;
+    top: 290px;
+}
+
+#locationE {
+    left: 952px;
+    top: 205px;
+}
+
+#locationF {
+    left: 735px;
+    top: 400px;
+}
+
+#locationG {
+    left: 731px;
+    top: 205px;
+}
+
+#locationH {
+    left: 800px;
+    top: 567px;
+}
+
+#locationI {
+    left: 890px;
+    top: 567px;
+}
+
+#locationJ {
+    left: 700px;
+    top: 350px;
+}
+
+#locationK {
+    left: 700px;
+    top: 500px;
+}
+
+
+/*--- BODY ↑ ---*/
+/*--- FOOTER ↓ ---*/
+
+footer {
+    background-color: rgb(5, 27, 27);
+    width: 98%;
+    height: 200px;
+    text-align: center;
+    color: rgb(40, 142, 142);
+    font-weight: bold;
+    padding: 1%;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+#cFoot1 {
+    line-height: 20px;
+}
+
+.cFoot {
+    background-color: rgb(40, 57, 86);
+    margin: 10px 50px;
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+footer em {
+    color: red;
+}
+
+.cFoot p {
+    padding: 10px;
+    margin-top: 5%;
+    line-height: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#cFoot1 p {
+    line-height: 30px;
+}
+
+footer a img {
+
+    width: 60px;
+    height: 50px;
+    transition: 0.4s;
+}
+
+footer a img:hover {
+    position: relative;
+    width: 70px;
+    height: 60px;
+}
+
+footer img:last-of-type {
+    border-radius: 100%;
+}
+
+/*--- FOOTER ↑ ---*/

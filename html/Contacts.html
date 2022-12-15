@@ -1,0 +1,198 @@
+<!-- By Rob-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Contacts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Contacts</title>
+</head>
+
+<header>
+    <nav>
+        <img src="../img/vectoriel-removebg-preview.png" alt="hihih" id="imgAli">
+        <div id="TitleNav">p<span class="bromure">R</span>ob<span class="bromure">A</span class="bromure">bi<span
+                class="bromure">L</span>it<span>Y</span class="bromure"><span>G</span class="bromure">am<span
+                class="bromure">E</span>s</div>
+        <div id="navBis">
+            <ul id="ulT">
+                <li id="jk"><a href="Accueil.html">Accueil</a></li>
+                <li><a href="#">Jeux</a>
+                    <!--ici en dessous menu deroulant test-->
+                    <ul class="deroulant">
+                        <li><a href="jeux.html">La roulette française</a></li>
+                        <li><a href=""><em>Le poker (in progress)</em></a></li>
+                        <li><a href="#"><em>Le 21 (dés) (in progress)</em></a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacts.html">Contacts</a></li>
+                <li id="nb"> <span id="pmlo"> <a href="#">Règles de jeux</a> </span>
+                    <ul class="deroulantRules">
+                        <li><a href="Rules.html">La roulette française</a></li>
+                        <li><a href="#"><em>Le poker (in progress)</em></a></li>
+                        <li><a href="#"><em>Le 21 (dés) (in progress)</em></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div id="body">
+        <form method="post" action="../php/traitement.php">
+            <p>Ce formulaire permet de mieux vous connaître et ainsi d'améliorer cet site web consacré à une valeur
+                fondamentale de nos sociétés: les jeux d'argents.</p>
+            <div id="form">
+                <div id="personnalElem">
+                    <fieldset>
+                        <legend>Elements personnels</legend>
+                        <p>
+                            <label for="pseudo">Votre pseudo :</label>
+                            <input type="text" name="pseudo" id="pseudo" placeholder="Entrez votre pseudo" size="20%"
+                                required class="intElem">
+                        </p>
+                        <p>
+                            <label for="log">Votre mot de passe :</label>
+                            <input type="password" name="log" id="log" placeholder="Votre mot de passe" size="20%"
+                                required class="intElem">
+                        </p>
+                        <p>
+                            <label for="age">Votre âge :</label>
+                            <input type="number" id="age" name="age" placeholder="Entrez votre âge" size="10%" required
+                                class="intElem">
+                        </p>
+                        <p>
+                            <label for="birthday">Votre date de naissance :</label>
+                            <input type="date" id="birthday" name="birthday" required class="intElem">
+                        </p>
+                        <p>Veuillez choisir un champ ci-dessous:<br>
+                            <input type="radio" name="sexe" value="Femme" id="femme" checked>
+                            <label for="femme">: Femme</label>
+                            <br>
+                            <input type="radio" name="sexe" value="Homme" id="homme">
+                            <label for="homme">: Homme</label>
+                            <br>
+                            <input type="radio" name="sexe" value="non_binaire" id="non_binaire">
+                            <label for="non_binaire">: Non-binaire</label>
+                            <br>
+                            <input type="radio" name="sexe" value="not_value" id="not_value">
+                            <label for="note_value">: Ne se prononce pas</label>
+                        </p>
+                        <p>
+                            <label for="pays">Dans quels pays habitez-vous?</label>
+                            <select name="pays" id="pays">
+                                <option value="japon">Japon</option>
+                                <option value="espagne">Espagne</option>
+                                <option value="italie">Italie</option>
+                                <option value="uk">Royaume-Uni</option>
+                                <option value="usa">Etats-Unis</option>
+                                <option value="maroc">Maroc</option>
+                                <option value="iran">Iran</option>
+                                <option value="chine">Chine</option>
+                                <option value="allemagne">Allemagne</option>
+                                <option value="pays-bas">Pays-Bas</option>
+                                <option value="canada">Canada</option>
+                                <option value="france">France</option>
+                                <option value="tchéquie">Tchéquie</option>
+                                <option value="russie">Russie</option>
+                                <option value="azeroth">Azeroth</option>
+                                <option value="Amakna">Amakna</option>
+                            </select>
+
+                        </p>
+                        <p>
+                            <label for="email">Votre email :</label>
+                            <input type="email" id="email" name="email" placeholder="Entrez votre email" size="30%"
+                                required class="intElem">
+                        </p>
+                    </fieldset>
+                </div>
+                <div id="check">
+                    <fieldset>
+                        <legend>Sondage et intérêts</legend>
+                        <div>
+                            <p>Dans le cadre d'un sondage nous aimerions savoir quel(s) jeu(x) vous souhaiteriez
+                                retrouver sur
+                                ce site
+                                internet :
+                                <br>
+                                <input type="checkbox" name="poker" id="poker" class="sondage">
+                                <label for="poker">: Poker</label>
+                                <br>
+                                <input type="checkbox" name="black_jack" id="black_jack" class="sondage">
+                                <label for="black_jack">: Black Jack</label>
+                                <br>
+                                <input type="checkbox" name="yams" id="yams" class="sondage">
+                                <label for="yams">: Yam's</label>
+                                <br>
+                                <input type="checkbox" name="wheel" id="wheel" checked class="sondage">
+                                <label for="wheel">: Roue de la fortune</label>
+                                <br>
+                                <input type="checkbox" name="craps" id="craps" class="sondage">
+                                <label for="craps">: Craps</label>
+                                <br>
+                                <input type="checkbox" name="shifumi" id="shifumi" class="sondage">
+                                <label for="shifumi">: Shifumi... contre l'ordi!</label>
+                                <br>
+                                <input type="checkbox" name="other" id="other" class="sondage">
+                                <label for="other">: Autre(s) :</label>
+                                <br>
+                            <div id="sondage">
+                                <textarea name="other_text" id="other_text" cols="40" rows="10"
+                                    placeholder="Veuillez indiquer le ou les jeux que vous souhaiteriez retrouver sur ce site web"
+                                    class="input"></textarea>
+                                </p>
+                                <div id="avisSite">
+                                    <p>
+                                        <label for="textarea">Comment trouvez-vous ce site en pleine construction
+                                            ?</label>
+                                        <br>
+                                        <textarea id="textarea" name="textarea"
+                                            placeholder="Allez-y n'aillez pas peur, enfin je suis très sensible à la critique mais allez-y je vous en prie :), n'oubliez pas de laisser votre adresse :)"
+                                            rows="10" cols="40" class="input"></textarea>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div id="divSubmit">
+                    <input type="submit" value="Envoyer" id="submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    <br><br>
+    <p>Une fois vos données transmpises vous ne pourrez plus les modifier,mais si vous souhaitez le faire, vous pouvez nous contacter par mail</p><br>
+</body>
+
+<footer>
+    <div id="footer">
+        <div id="cFoot1" class="cFoot">
+            <p><a href="">Informations générales</a><br> <a href="">Réglement du site </a><br><a href="Contacts.html">Contact us</a></p>
+        </div>
+        <div class="cFoot">
+            <div>
+                <p>Suivez nous sur nos résseaux !</p>
+            </div>
+            <div>
+                <a href="http://facebook.com" target="_blank"> <img src="../img/fb.png" alt="Logo Facebook"> </a>
+                <a href="https://twitter.com" target="_blank"><img id="twitImg" src="../img/twitter.jpg" alt="Logo Twitter"> </a>
+            </div>
+        </div>
+        <div id="cFoot3" class="cFoot">
+            <p> N'hésitez pas à faire un don par le biais des contacts si vous aimez le site ! <br> Nous vous en serions très reconnaissant :)</p>
+        </div>
+    </div>
+    <div id="CopyR">© 2022-2022, pRobAbiLitY GamEs, by Rob, <em>in progress</em></div>
+</footer>
+<script src="/script/Contacts.js"></script>
+
+</html>

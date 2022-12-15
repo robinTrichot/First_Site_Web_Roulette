@@ -1,0 +1,107 @@
+<!-- By Rob-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/Jeux.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <title>Jeux</title>
+</head>
+
+<header>
+    <nav>
+        <img src="../img/vectoriel-removebg-preview.png" alt="hihih" id="imgAli">
+        <div id="TitleNav">p<span class="bromure">R</span>ob<span class="bromure">A</span class="bromure">bi<span
+                class="bromure">L</span>it<span>Y</span class="bromure"><span>G</span class="bromure">am<span
+                class="bromure">E</span>s</div>
+        <div id="navBis">
+            <ul id="ulT">
+                <li id="jk"><a href="Accueil.html">Accueil</a></li>
+                <li><a href="#">Jeux</a>
+                    <!--ici en dessous menu deroulant test-->
+                    <ul class="deroulant">
+                        <li><a href="jeux.html">La roulette française</a></li>
+                        <li><a href=""><em>Le poker (in progress)</em></a></li>
+                        <li><a href="#"><em>Le 21 (dés) (in progress)</em></a></li>
+                    </ul>
+                </li>
+                <li><a href="Contacts.html">Contacts</a></li>
+                <li id="nb"> <span id="pmlo"> <a href="#">Règles de jeux</a> </span>
+                    <ul class="deroulantRules">
+                        <li><a href="Rules.html">La roulette française</a></li>
+                        <li><a href="#"><em>Le poker (in progress)</em></a></li>
+                        <li><a href="#"><em>Le 21 (dés) (in progress)</em></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+
+    <div id="Consignes"><em id="prog"> Cette roulette classique est en progression </em><br> Cliquez sur le nombre de
+        jetons que vous voulez miser. <br> Entrez un chiffre entre 0 et 5 sur lequel vous voulez parier. <br> Si vous
+        chiffre match, vous avez gagné et votre somme initiale est complétée par un multiplicateur de 2. <br>Merci de
+        raffraichir cette page.</div>
+    <div id="sep"></div>
+
+    <div id="sommeI"> Somme initiale =</div>
+    <div id="initSum"></div>
+
+    <div id="divSom">
+        Somme misée =
+        <div id="startingBet"></div>
+        <div id="divB">
+           
+            <div id="divButtons">
+            <button type="button" value="1" id="btnBet1">1</button>
+            <button type="button" value="5" id="btnBet2">5</button>
+            <button type="button" value="10" id="btnBet3">10</button>
+        </div>
+        </div>
+
+        <div><input type="text" id="parie" placeholder="Valeur entre 1 et 5"></div><br>
+
+        <button type="button" id="recup">Vérifiez!</button><br>
+
+        <div id="roulette">La bille de la roulette est tombée sur : </div>
+        <div id="resultDiv"></div>
+    </div>
+</body>
+
+</div>
+</section>
+
+<footer>
+    <div id="footer">
+        <div id="cFoot1" class="cFoot">
+            <p><a href="">Informations générales</a><br> <a href="">Réglement du site </a><br><a
+                    href="Contacts.html">Contact us</a></p>
+        </div>
+        <div class="cFoot">
+            <div>
+                <p>Suivez nous sur nos résseaux !</p>
+            </div>
+            <div>
+                <a href="http://facebook.com" target="_blank"> <img src="../img/fb.png" alt="Logo Facebook"> </a>
+                <a href="https://twitter.com" target="_blank"><img id="twitImg" src="../img/twitter.jpg"
+                        alt="Logo Twitter"> </a>
+            </div>
+        </div>
+        <div id="cFoot3" class="cFoot">
+            <p> N'hésitez pas à faire un don par le biais <br> des contacts si vous aimez le site ! <br> Nous vous en
+                serions très reconnaissant :)</p>
+        </div>
+    </div>
+    <div id="CopyR">© 2022-2022, pRobAbiLitY GamEs, by Rob, <em>in progress</em></div>
+</footer>
+<script src="../script/jeux.js"></script>
+
+</html>
